@@ -12,6 +12,7 @@ class Work(models.Model):
     photo2 = models.ImageField(upload_to='news/photos/', null=True, blank=True)
     photo3 = models.ImageField(upload_to='news/photos/', null=True, blank=True)
     photo4 = models.ImageField(upload_to='news/photos/', null=True, blank=True)
+    work_time = models.CharField(max_length=250)
     uploaded_at = models.DateTimeField(default=timezone.now)
 
 
